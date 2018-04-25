@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Smart Poultry</string>
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
+    <string name="action_date_settings">Date Settings</string>
+    <string name="action_mode_settings">Mode Settings</string>
+    <string name="action_logout">log out</string>
+    <string name="selected_date">The date you picked will be shown here.</string>
+    <string name="pick_date">Pick Date</string>
+    <string name="device_reset">Device Restart</string>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!--<item android:id="@+id/pick_action_provider"-->
+        <!--android:icon="@drawable/power"-->
+        <!--app:showAsAction="always"-->
+        <!--android:iconTint="@color/colorPrimaryDark"-->
+
+        <!--android:title="Overflow" >-->
+    <!--</item>-->
+
+    <item
+        android:id="@+id/action_control"
+        android:orderInCategory="100"
+        android:title="@string/action_date_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mode"
+        android:orderInCategory="100"
+        android:title="@string/action_mode_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/reset"
+        android:orderInCategory="100"
+        android:title="@string/device_reset"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/switch_fan"
+        android:orderInCategory="100"
+        android:title="Fan"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="@string/action_logout"
+        app:showAsAction="never" />
+</menu>

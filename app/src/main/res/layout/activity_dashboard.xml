@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4"
+    android:orientation="vertical"
+    android:background="#8aC043"
+    tools:context="com.example.mabia.smartpoultrymanagement.DashboardActivity">
+     <!--Temp & Hum-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/control_margin_full">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:background="@drawable/border_round"
+            android:layout_margin="@dimen/control_margin_full"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/control_padding_bottom"
+                    app:srcCompat="@drawable/tempicon" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textViewTemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="0*C"
+                    android:textSize="@dimen/textview_big"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/control_margin_top"
+                    android:paddingEnd="@dimen/control_padding_bottom"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:background="@drawable/border_round"
+            android:layout_margin="@dimen/control_margin_full">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/control_padding_bottom"
+                    app:srcCompat="@drawable/humicon" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textViewHum"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:text="0%"
+                    android:textSize="@dimen/textview_big"
+                    android:gravity="center"
+
+                    android:layout_marginTop="@dimen/control_margin_top"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--Gas Status-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/control_margin_full"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:background="@drawable/border_round"
+
+            android:layout_margin="@dimen/control_margin_full">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1.69"
+                android:layout_marginBottom="@dimen/control_margin_big"
+                android:layout_marginTop="@dimen/control_margin_big"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/control_padding_bottom"
+                    android:layout_gravity="center"
+                    android:text="CO2"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_CO2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/control_margin_top"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="0%"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/textview_big" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:background="@drawable/border_round"
+
+            android:layout_margin="@dimen/control_margin_full">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1.69"
+                android:layout_marginBottom="@dimen/control_margin_big"
+                android:layout_marginTop="@dimen/control_margin_big"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_background"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingTop="@dimen/control_padding_bottom"
+                    android:layout_gravity="center"
+                    android:text="NH3"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_NH3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/control_margin_top"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="0%"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/textview_big" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+   
+    <!--Notifications-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:weightSum="5"
+        android:layout_margin="@dimen/control_margin_full">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_round"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/control_margin_full"
+            android:weightSum="5">
+
+            <ImageView
+                android:id="@+id/imageViewTemp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/tempicon"
+                />
+
+
+
+            <TextView
+                android:id="@+id/textViewTempNotification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="Temperature Notification"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="5"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/control_margin_full"
+            android:background="@drawable/border_round">
+            <ImageView
+                android:id="@+id/imageViewHum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/humicon"  />
+            <TextView
+                android:id="@+id/textViewHumNotification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="Humidity Notification"
+                android:layout_weight="4"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="5"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/control_margin_full"
+            android:background="@drawable/border_round">
+            <ImageView
+                android:id="@+id/imageViewCo2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/img_co2" />
+            <TextView
+                android:id="@+id/textViewCO2Notification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="CO2 Gas Notification"
+                android:layout_weight="4"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="5"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/control_margin_full"
+            android:background="@drawable/border_round">
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/lighticon" />
+            <TextView
+                android:id="@+id/textViewLightNotification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="Light Notification"
+                android:layout_weight="4"/>
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="5"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/control_margin_full"
+        android:background="@drawable/border_round">
+            <ImageView
+                android:id="@+id/imageViewTimeElapsed"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/timeicon" />
+            <TextView
+                android:id="@+id/textViewTimeNotification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="Time Elapsed"
+                android:layout_weight="4"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

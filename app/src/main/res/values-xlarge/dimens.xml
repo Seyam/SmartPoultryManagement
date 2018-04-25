@@ -1,0 +1,42 @@
+<resources>
+
+    
+    
+    <dimen name="textview_big">55sp</dimen>
+    <dimen name="button">55sp</dimen>
+    
+    <dimen name="textview_small">35sp</dimen>
+     <dimen name="textview_very_small">25sp</dimen>
+    
+    
+     <dimen name="layout_margin_full">30dp</dimen>
+     <dimen name="control_margin_full">20dp</dimen>
+     <dimen name="control_margin_right">20dp</dimen>
+     <dimen name="control_margin_left">20dp</dimen>
+     <dimen name="control_margin_top">20dp</dimen>
+     <dimen name="control_margin_bottom">20dp</dimen>     
+     <dimen name="control_margin_big">30dp</dimen>
+     
+     
+     <dimen name="layout_padding_full">30dp</dimen>
+      <dimen name="control_padding_full">20dp</dimen>
+     <dimen name="control_padding_right">20dp</dimen>
+     <dimen name="control_padding_left">20dp</dimen>
+     <dimen name="control_padding_top">20dp</dimen>
+     <dimen name="control_padding_bottom">20dp</dimen>
+     
+     
+     
+     <dimen name="radius">15dp</dimen>
+     <dimen name="stroke">3dp</dimen>
+     <dimen name="stroke_focused">9dp</dimen>
+     
+     <dimen name="stu_image">200dp</dimen>
+     
+     <dimen name="stu_image_height">110dp</dimen>
+     <dimen name="stu_image_width">110dp</dimen>
+     
+     
+     <dimen name="icon">80dp</dimen>
+
+</resources>

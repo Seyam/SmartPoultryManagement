@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/sample_background"
+    tools:context="com.example.mabia.smartpoultrymanagement.SignUpActivity">
+    <TextView
+        android:text="Smart Poultry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#143850"
+        style="@style/textView_style"
+        android:id="@+id/textView" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/adduser"
+        android:layout_gravity="center"
+        android:paddingTop="40dp"
+        android:layout_centerVertical="true"
+        />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <!--User Name start-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="15dp"
+            android:id="@+id/til_r_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimary"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_r_user"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_account_circle_black_24dp"
+                android:gravity="center|left|bottom"
+                android:hint="user name"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <!--User Name end-->
+        <!--password start-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@+id/til_r_email"
+            android:id="@+id/til_r_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimary"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_r_password"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+                android:drawablePadding="5dp"
+                android:drawableStart="@android:drawable/ic_lock_idle_lock"
+                android:gravity="center|left|bottom"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:maxLength="50"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <!--password end-->
+        <!--confirm password start-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@+id/til_r_email"
+            android:id="@+id/til_c_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorPrimary"
+            app:hintTextAppearance="@style/TextAppearence.App.TextInputLayout">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_c_password"
+                style="@style/TextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+                android:drawablePadding="5dp"
+                android:drawableStart="@android:drawable/ic_lock_idle_lock"
+                android:gravity="center|left|bottom"
+                android:hint="confirm password"
+                android:inputType="textPassword"
+                android:maxLength="50"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <!--confirm password end-->
+        <Button
+            android:id="@+id/btn_sing_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2196F3"
+            android:text="Sign Up"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>
